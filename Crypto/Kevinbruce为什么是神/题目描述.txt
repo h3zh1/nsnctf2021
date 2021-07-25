@@ -1,0 +1,4 @@
+
+题目描述：首先是犯下了套娃之罪的出题人...
+
+flag格式：nsnctf{part1-part2-part3-part4-part5}，请将所有的字母转为小写。

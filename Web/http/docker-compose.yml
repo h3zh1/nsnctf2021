@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  web:
+    build: .
+    restart: always
+    image: nsnctf/http
+    ports:
+      - "0.0.0.0:13000:80"
+    environment:
+      - FLAG=flag{edd4c905-165f-4a73-93e0-08b897c3797f}
+        

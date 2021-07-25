@@ -1,0 +1,13 @@
+
+version: "2"
+
+services:
+
+  web:
+    build: .
+    image: nsnctf/easy_search
+    restart: always
+    ports:
+      - "127.0.0.1:8302:80"
+    environment:
+      - FLAG=flag{WoW_1s_rEa11y_fUn}

@@ -1,0 +1,14 @@
+#!/bin/sh
+
+sed -i "s/flag{1_1ove_ca1Cu1at0r}/$FLAG/" /wHaT_y0u_wAnt_1s_fl4gggg.txt
+
+export FLAG=not_flag
+FLAG=not_flag
+
+/usr/sbin/sshd &
+php-fpm &
+nginx &
+
+echo "Running..."
+
+tail -F /dev/null

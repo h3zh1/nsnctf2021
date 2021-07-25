@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  web:
+    build: .
+    restart: always
+    image: nsnctf/md5bypass
+    ports:
+      - "0.0.0.0:13000:80"
+    environment:
+      - FLAG=nsnctf{mml_1s_a_g0od_boy}

@@ -1,0 +1,15 @@
+version: "2"
+services:
+  
+  pwn:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nsnctf/welcome_2_nsnctf
+    volumes:
+      - ./tcpdump:/var/lib/tcpdump
+    ports:
+      - "10001:10000"
+    environment:
+      - FLAG=nsnctf{welcome_to_nsnctf}
+      - TCPDUMP_ENABLE=0

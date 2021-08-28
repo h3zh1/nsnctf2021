@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  web:
+    build: .
+    restart: always
+    image: wmctf2021/dwyyds
+    ports:
+      - "0.0.0.0:10001:10001"
+    environment:
+      - FLAG=dwyyds
+        
